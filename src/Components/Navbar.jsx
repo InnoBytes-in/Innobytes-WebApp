@@ -2,55 +2,56 @@ import React from "react";
 import { useState, useEffect } from "react";
 import DropDown from "./DropDown";
 import logo from "../assets/logo.png";
-import { dropDowntypes } from "./NavBarData";
+
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  let [items, setItems] = useState([]);
+  let [items, setItems] = useState("");
 
   return (
     <>
-      <header className="bg-blend-screen shadow-md">
-        <div
-          className="container mx-auto px-4"
-          onMouseLeave={() => setItems(() => [])}
-        >
+      <header
+        className="bg-blend-screen shadow-md"
+        onMouseLeave={() => setItems(() => "")}
+      >
+        <div className="container mx-auto px-4">
           <nav className="flex items-center py-4">
-            <div>
+            <Link to="/">
               <img
                 src={logo}
                 alt="Company Logo"
                 className="h-16 cursor-pointer"
               />
-            </div>
+            </Link>
             <div>
               <ul className="flex items-center ml-6">
                 <li
                   className="mx-8 text-gray-600 hover:text-blue-500 cursor-pointer"
-                  onMouseEnter={() => setItems(() => dropDowntypes.insights)}
+                  onMouseEnter={() => setItems(() => "insights")}
                 >
                   Insights
                 </li>
                 <li
                   className="mx-8 text-gray-600 hover:text-blue-500 cursor-pointer"
-                  onMouseEnter={() => setItems(() => dropDowntypes.industries)}
+                  onMouseEnter={() => setItems(() => "industries")}
                 >
                   Industries
                 </li>
                 <li
                   className="mx-8 text-gray-600 hover:text-blue-500 cursor-pointer"
-                  onMouseEnter={() => setItems(() => dropDowntypes.services)}
+                  onMouseEnter={() => setItems(() => "services")}
                 >
                   Services
                 </li>
                 <li
                   className="mx-8 text-gray-600 hover:text-blue-500 cursor-pointer"
-                  onMouseEnter={() => setItems(() => dropDowntypes.careers)}
+                  onMouseEnter={() => setItems(() => "careers")}
                 >
                   Careers
                 </li>
                 <li
                   className="mx-8 text-gray-600 hover:text-blue-500 cursor-pointer"
-                  onMouseEnter={() => setItems(() => dropDowntypes.aboutUs)}
+                  onMouseEnter={() => setItems(() => "aboutUs")}
                 >
                   About Us
                 </li>

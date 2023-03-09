@@ -1,170 +1,52 @@
 import React from "react";
-import bg from "../assets/Cloud-bg.png";
+import bg from "../assets/Tabs/Life Sciences bg.jpeg";
+import cr from "../assets/Tabs/carousel.jpeg";
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { GrNext, GrPrevious } from "react-icons/gr";
+
 const Cloud = ({ tabCatagory, tabName }) => {
   return (
     <>
-      <div className="bg-cloud-bg bg-cover">
-        <section className="py-12 px-4 text-center ">
-          <div className="container mx-auto">
-            <h1 className="text-4xl text-white font-bold leading-tight mb-4">
-              {tabName}
-            </h1>
-            <p className="text-white mb-8">
-              Get access to our world-className {tabName} and take your business
-              to the next level.
-            </p>
-          </div>
-        </section>
-
-        <section className="py-12 px-4">
-          <div className="container mx-auto my-[150px] flex flex-wrap">
-            <div className="ml-[700px] mr-7 text-left font-serif">
-              <h2 className="text-2xl font-bold leading-tight mb-4 text-white">
-                About Us
-              </h2>
-              <p className="text-white mb-4">
-                At IT Consulting Company, we have years of experience providing
-                world-className cloud services to businesses of all sizes. Our
-                team of experts is dedicated to helping you take full advantage
-                of the cloud, so you can increase productivity, lower costs, and
-                scale your business to new heights.
-              </p>
-              <p className="text-white mb-4">
-                Contact us today to learn more about our {tabName} and how we
-                can help your business succeed.
-              </p>
-              <a
-                href="#"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 mt-12 rounded-full"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </section>
+      <div className="container h-[500px] ">
+        <img src={bg} className="object-none h-full w-full" />
+        <div className="flex absolute z-0 bg-slate-200 w-96 h-60 top-96 left-32 justify-center items-center rounded-md opacity-70">
+          <h1 className="text-4xl font-bold">Life Sciences</h1>
+        </div>
+        <div className="flex justify-end">
+          <FaLinkedin size="2rem" />
+          <FaFacebookSquare size="2rem" />
+          <FaTwitterSquare size="2rem" />
+        </div>
       </div>
+      <div className="flex flex-col">
+        <p className="my-28 text-3xl text-center w-full px-28 font-medium font-serif">
+          We at Innobytes are committed to guiding our life science clients
+          through the intricate and quickly changing business environment
+        </p>
+        <p className="mb-20 text-3xl text-center w-full px-28 font-serif">
+          Our team of professionals is prepared to offer strategic consulting
+          services catered to the requirements of each specific client thanks to
+          years of expertise and a strong grasp of the distinctive issues faced
+          by life science enterprises.
+        </p>
+      </div>
+      <div className="flex items-center justify-center my-14">
+        <GrPrevious size="2rem" className="mr-10" />
 
-      <hr />
-
-      <section className="py-12 px-4">
-        <div className="container mx flex ">
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <div className="bg-white rounded-md shadow-md p-6">
-                <h3 className="text-xl font-bold mb-4">Article 1</h3>
-                <p className="text-gray-700 mb-4">
-                  Lorem ipsum dolor sit amet. Sed totam magni est enim quia aut
-                  molestias suscipit eos inventore tempore in delectus
-                  reiciendis
-                </p>
-                <a href="#" className="text-blue-500 hover:text-blue-600">
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <div className="bg-white rounded-md shadow-md p-6">
-                <h3 className="text-xl font-bold mb-4">Article 2</h3>
-                <p className="text-gray-700 mb-4">
-                  Lorem ipsum dolor sit amet. Sed totam magni est enim quia aut
-                  molestias suscipit eos inventore tempore in delectus
-                  reiciendis
-                </p>
-                <a href="#" className="text-blue-500 hover:text-blue-600">
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <div className="bg-white rounded-md shadow-md p-6">
-                <h3 className="text-xl font-bold mb-4">Article 3</h3>
-                <p className="text-gray-700 mb-4">
-                  Lorem ipsum dolor sit amet. Sed totam magni est enim quia aut
-                  molestias suscipit eos inventore tempore in delectus
-                  reiciendis
-                </p>
-                <a href="#" className="text-blue-500 hover:text-blue-600">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 px-4 bg-gray-800 text-white">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-bold leading-tight mb-4">Contact Us</h2>
-          <p className="mb-8">
-            Ready to take your business to the cloud? Contact us today to learn
-            more about our cloud services and how we can help your business
-            succeed.
+        <div className="flex h-80 items-center justify-center w-3/4 transition ease-in-out hover:scale-105">
+          <img src={cr} className="relative object-none h-full w-[700px]" />
+          <p className="relative text-2xl w-80 h-full px-10 bg-slate-100 ">
+            <h1 className="text-4xl my-7">Heading</h1>
+            <p className="my-7">
+              Innobytes for life sciences shorter duration to care at a level
+            </p>
+            <a href="" className="text-blue-700 hover:underline">
+              Read more
+            </a>
           </p>
-          <form action="#" method="POST" className="mb-4">
-            <div className="flex flex-wrap -mx-4 mb-4">
-              <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                <label
-                  className="block text-gray-400 font-bold mb-2"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
-                <input
-                  className="form-input w-full px-4 py-3 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                  id="name"
-                  type="text"
-                  name="name"
-                  required
-                />
-              </div>
-              <div className="w-full md:w-1/2 px-4">
-                <label
-                  className="block text-gray-400 font-bold mb-2"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  className="form-input w-full px-4 py-3 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                  id="email"
-                  type="email"
-                  name="email"
-                  required
-                />
-              </div>
-            </div>
-            <div className="flex flex-wrap -mx-4 mb-4">
-              <div className="w-full px-4">
-                <label className="block">Message</label>
-                <textarea
-                  className="form-textarea w-full px-4 py-3 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <button
-                className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-300"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
         </div>
-      </section>
-
-      <footer className="py-6 px-4 bg-gray-900 text-gray-400">
-        <div className="container mx-auto flex justify-between">
-          <p className="text-sm">
-            &copy; 2023 IT Consulting. All rights reserved.
-          </p>
-          <p className="text-sm">Designed by Your Name</p>
-        </div>
-      </footer>
+        <GrNext size="2rem" className="ml-10" />
+      </div>
     </>
   );
 };

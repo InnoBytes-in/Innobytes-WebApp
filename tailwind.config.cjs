@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "cloud-bg": "url('src/assets/Cloud-bg.png')",
+        "cloud-bg": "url('src/assets/Tabs/Cloud bg.png')",
+        "life-sciences-bg": "url('src/assets/Tabs/Life Sciences bg.jpeg')",
       },
     },
   },

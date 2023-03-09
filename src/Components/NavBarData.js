@@ -15,6 +15,7 @@ export const dropDowntypes = {
     "Software and Platforms",
     "Banking",
     "Consumer Goods and Services",
+    "Internet Of Things",
     "High Tech",
     "Natural Resources",
     "Travel",

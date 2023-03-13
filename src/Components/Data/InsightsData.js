@@ -1,0 +1,142 @@
+export const insights = [
+  {
+    id: 0,
+    name: "Leading sustainability",
+    bg: "../assets/Tabs/Life Sciences bg.jpeg",
+    p1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
+    p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas! Numquam, tenetur provident vero cupiditate neque est incidunt rem illum sequi delectus dignissimos dolorum aut corporis facere. Molestias iusto explicabo tenetur laboriosam doloribus facere necessitatibus fuga vel voluptates, tempora at?",
+    p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error ipsam eos sed laboriosam assumenda iure nesciunt sit quasi. Quia.",
+    whatwedo: [
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+    ],
+    carousel: [
+      {
+        id: 1,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+      {
+        id: 2,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "The future of technology",
+    bg: "../assets/Tabs/Life Sciences bg.jpeg",
+    p1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
+    p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas! Numquam, tenetur provident vero cupiditate neque est incidunt rem illum sequi delectus dignissimos dolorum aut corporis facere. Molestias iusto explicabo tenetur laboriosam doloribus facere necessitatibus fuga vel voluptates, tempora at?",
+    p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error ipsam eos sed laboriosam assumenda iure nesciunt sit quasi. Quia.",
+    whatwedo: [
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+    ],
+    carousel: [
+      {
+        id: 1,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+      {
+        id: 2,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Marketing for customer experience",
+    bg: "../assets/Tabs/Life Sciences bg.jpeg",
+    p1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
+    p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas! Numquam, tenetur provident vero cupiditate neque est incidunt rem illum sequi delectus dignissimos dolorum aut corporis facere. Molestias iusto explicabo tenetur laboriosam doloribus facere necessitatibus fuga vel voluptates, tempora at?",
+    p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error ipsam eos sed laboriosam assumenda iure nesciunt sit quasi. Quia.",
+    whatwedo: [
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+    ],
+    carousel: [
+      {
+        id: 1,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+      {
+        id: 2,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Our research library",
+    bg: "../assets/Tabs/Life Sciences bg.jpeg",
+    p1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
+    p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas! Numquam, tenetur provident vero cupiditate neque est incidunt rem illum sequi delectus dignissimos dolorum aut corporis facere. Molestias iusto explicabo tenetur laboriosam doloribus facere necessitatibus fuga vel voluptates, tempora at?",
+    p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error ipsam eos sed laboriosam assumenda iure nesciunt sit quasi. Quia.",
+    whatwedo: [
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+    ],
+    carousel: [
+      {
+        id: 1,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+      {
+        id: 2,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Expert perspectives",
+    bg: "../assets/Tabs/Life Sciences bg.jpeg",
+    p1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
+    p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas! Numquam, tenetur provident vero cupiditate neque est incidunt rem illum sequi delectus dignissimos dolorum aut corporis facere. Molestias iusto explicabo tenetur laboriosam doloribus facere necessitatibus fuga vel voluptates, tempora at?",
+    p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error ipsam eos sed laboriosam assumenda iure nesciunt sit quasi. Quia.",
+    whatwedo: [
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+      "Lorem, ipsum.",
+      "Lorem, ipsum dolor.",
+    ],
+    carousel: [
+      {
+        id: 1,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+      {
+        id: 2,
+        heading: "Heading",
+        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, delectus?",
+        img: "../assets/Tabs/carousel.jpeg",
+      },
+    ],
+  },
+];

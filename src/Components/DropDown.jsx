@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { dropDowntypes } from "./NavBarData";
+import { dropDowntypes } from "./Data/NavBarData";
 
 const DropDown = ({ items }) => {
   // console.log(dropDowntypes[items]);

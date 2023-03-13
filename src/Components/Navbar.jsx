@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import DropDown from "./DropDown";
 import logo from "../assets/logo.png";
-
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

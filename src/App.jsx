@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Tab from "./Components/Tab";
 import { Route, Routes } from "react-router-dom";
-import { dropDowntypes } from "./Components/NavBarData";
+import { dropDowntypes } from "./Components/Data/NavBarData";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,21 +17,27 @@ function App() {
           <Route
             key={index}
             path={"/insights/" + item}
-            element={<Tab tabCatagory="insights" tabName={item} />}
+            element={
+              <Tab tabCatagory="insights" tabName={item} index={index} />
+            }
           />
         ))}
         {dropDowntypes.industries.map((item, index) => (
           <Route
             key={index}
             path={"/industries/" + item}
-            element={<Tab tabCatagory="industries" tabName={item} />}
+            element={
+              <Tab tabCatagory="industries" tabName={item} index={index} />
+            }
           />
         ))}
         {dropDowntypes.services.map((item, index) => (
           <Route
             key={index}
             path={"/services/" + item}
-            element={<Tab tabCatagory="services" tabName={item} />}
+            element={
+              <Tab tabCatagory="services" tabName={item} index={index} />
+            }
           />
         ))}
       </Routes>

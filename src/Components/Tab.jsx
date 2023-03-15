@@ -10,7 +10,7 @@ const Cloud = ({ tabCatagory, tabName, index }) => {
       {/* Top Section */}
       <div className="container h-[500px] ">
         <img src={bg} className="object-none h-full w-full" />
-        <div className="flex absolute z-0 bg-slate-200 w-96 h-60 top-96 left-32 justify-center items-center rounded-md opacity-70">
+        <div className="flex absolute z-0 bg-slate-200 w-96 h-60 top-96 left-32 justify-center items-center rounded-md opacity-70 drop-shadow-lg">
           <h1 className="text-4xl font-bold">Life Sciences </h1>
         </div>
         <div className="flex justify-end">
@@ -35,7 +35,7 @@ const Cloud = ({ tabCatagory, tabName, index }) => {
       </div>
 
       {/* Carousel Section */}
-      <div className="flex items-center justify-center my-14">
+      <div className="flex items-center justify-center my-14 drop-shadow-lg">
         <GrPrevious size="2rem" className="mr-10" />
 
         <div className="flex h-80 items-center justify-center w-3/4 transition ease-in-out hover:scale-105">

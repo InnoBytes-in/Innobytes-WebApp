@@ -6,7 +6,7 @@ const DropDown = ({ items }) => {
   // console.log(dropDowntypes[items]);
   return (
     <>
-      <div className="grid grid-cols-4 w-1/2 absolute z-10 bg-stone-300  ml-14 rounded-b-md">
+      <div className="grid grid-cols-4 w-1/2 absolute z-10 bg-neutral-200 ml-14 rounded-b-md">
         {dropDowntypes[items] != undefined
           ? dropDowntypes[items].map((item, index) => (
               <h4

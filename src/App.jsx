@@ -3,7 +3,9 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Tab from "./Components/Tab";
 import { Route, Routes } from "react-router-dom";
-import { dropDowntypes } from "./Components/Data/NavBarData";
+import { industries } from "./Components/Data/IndustriesData";
+import { insights } from "./Components/Data/InsightsData";
+import { services } from "./Components/Data/ServicesData";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,31 +15,25 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {dropDowntypes.insights.map((item, index) => (
+        {insights.map((item, index) => (
           <Route
             key={index}
-            path={"/insights/" + item}
-            element={
-              <Tab tabCatagory="insights" tabName={item} index={index} />
-            }
+            path={"/insights/" + item.name}
+            element={<Tab tabCatagory="insights" tab={item} index={index} />}
           />
         ))}
-        {dropDowntypes.industries.map((item, index) => (
+        {industries.map((item, index) => (
           <Route
             key={index}
-            path={"/industries/" + item}
-            element={
-              <Tab tabCatagory="industries" tabName={item} index={index} />
-            }
+            path={"/industries/" + item.name}
+            element={<Tab tabCatagory="industries" tab={item} index={index} />}
           />
         ))}
-        {dropDowntypes.services.map((item, index) => (
+        {services.map((item, index) => (
           <Route
             key={index}
-            path={"/services/" + item}
-            element={
-              <Tab tabCatagory="services" tabName={item} index={index} />
-            }
+            path={"/services/" + item.name}
+            element={<Tab tabCatagory="services" tab={item} index={index} />}
           />
         ))}
       </Routes>

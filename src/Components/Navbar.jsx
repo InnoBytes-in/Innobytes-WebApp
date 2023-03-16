@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="bg-blend-screen shadow-md"
+        className="fixed w-full bg-white opacity-95 font-medium font-serif z-10 shadow-md"
         onMouseLeave={() => setItems(() => "")}
       >
         <div className="container mx-auto px-4">

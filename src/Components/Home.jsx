@@ -10,7 +10,7 @@ const Home = () => {
       {/* Top Section */}
       <div className="container h-[700px]">
         <img className="object-cover h-full w-full " src={background} alt="" />
-        <div className="absolute top-96 left-28 w-1/2 bg-neutral-200 opacity-80 drop-shadow-md font-serif">
+        <div className="absolute bottom-16 left-28 w-1/2 bg-neutral-200 opacity-80 drop-shadow-md font-serif z-0">
           <p className="text-5xl px-7 my-10">
             We are focused on Innovation in products and services we give
           </p>
@@ -37,22 +37,38 @@ const Home = () => {
             Nisi distinctio quod tempore doloribus.
           </p>
           <div className="flex justify-start py-5">
-            <button className="text-lg text-slate-500 border-2 border-slate-500 p-1 hover:bg-slate-500 hover:text-white">
+            <button className="text-lg text-slate-500 border-2 border-slate-500 p-1 transition duration-500 ease-in-out hover:bg-slate-500 hover:text-white">
               Read more
             </button>
           </div>
         </div>
-        <div className="w-96 h-[330px] my-10 border-2">
-          <img src={aspirations} alt="" className="object-cover h-full" />
+        <div className="w-96 h-[330px] my-10 border-2 overflow-hidden">
+          <img
+            src={aspirations}
+            alt=""
+            className="object-cover h-full transition duration-500 ease-in-out hover:scale-125"
+          />
         </div>
       </div>
 
       {/* Insights Section */}
       <div className="my-10">
-        <h1 className="text-3xl text-center font-serif">Our latest Insights</h1>
+        <div class="flex items-center py-4 px-20">
+          <div class="flex-grow h-px bg-gray-400"></div>
+          <span class="flex-shrink text-3xl px-4 font-medium font-serif">
+            Our Latest Insights
+          </span>
+          <div class="flex-grow h-px bg-gray-400"></div>
+        </div>
         <div className="flex w-full items-center justify-center my-7 divide-x-4 divide-slate-500">
           <div className="h-auto w-2/5 px-10">
-            <img src={insight1} alt="" className="object-contain" />
+            <div className="overflow-hidden">
+              <img
+                src={insight1}
+                alt=""
+                className="object-cover transition duration-500 ease-in-out hover:scale-125"
+              />
+            </div>
             <h1 className="text-3xl text-center font-medium font-serif my-4">
               Lorem ipsum dolor sit.
             </h1>
@@ -63,7 +79,13 @@ const Home = () => {
             </p>
           </div>
           <div className="h-auto w-2/5 px-10">
-            <img src={insight2} alt="" className="object-contain" />
+            <div className="overflow-hidden">
+              <img
+                src={insight2}
+                alt=""
+                className="object-contain transition duration-500 ease-in-out hover:scale-125"
+              />
+            </div>
             <h1 className="text-3xl text-center font-medium font-serif my-4">
               Lorem ipsum dolor sit.
             </h1>
@@ -75,7 +97,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="text-xl text-slate-500 border-2 border-slate-500 p-3 hover:bg-slate-500 hover:text-white">
+          <button className="text-xl text-slate-500 border-2 border-slate-500 p-3 transition duration-500 ease-in-out hover:bg-slate-500 hover:text-white">
             See all Insights
           </button>
         </div>

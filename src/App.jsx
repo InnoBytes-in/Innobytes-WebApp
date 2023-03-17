@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Tab from "./Components/Tab";
+import Footer from "./Components/Footer";
 import { Route, Routes } from "react-router-dom";
 import { industries } from "./Components/Data/IndustriesData";
 import { insights } from "./Components/Data/InsightsData";
@@ -37,6 +38,7 @@ function App() {
           />
         ))}
       </Routes>
+      <Footer />
     </>
   );
 }

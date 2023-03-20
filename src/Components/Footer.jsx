@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="mt-40 h-80 font-serif">
+      <div className="mt-28 h-80 font-serif">
         <div class="flex items-center py-4 px-10">
           <div class="flex-grow h-px bg-gray-400"></div>
         </div>

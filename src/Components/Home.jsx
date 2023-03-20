@@ -3,6 +3,7 @@ import background from "../assets/Home-Bg.jpeg";
 import aspirations from "../assets/company-aspirations.jpeg";
 import insight1 from "../assets/insight1.jpg";
 import insight2 from "../assets/insight2.jpg";
+import contact from "../assets/ContactUs-home.jpg";
 
 const Home = () => {
   return (
@@ -100,6 +101,29 @@ const Home = () => {
           <button className="text-xl text-slate-500 border-2 border-slate-500 p-3 transition duration-500 ease-in-out hover:bg-slate-500 hover:text-white">
             See all Insights
           </button>
+        </div>
+        <div class="flex items-center pt-10 px-20">
+          <div class="flex-grow h-px bg-gray-400"></div>
+        </div>
+      </div>
+
+      {/* Work With Innobytes Section */}
+      <div className="relative w-full h-80 mt-28 justify-center shadow-sm shadow-slate-500 ">
+        <img
+          src={contact}
+          alt=""
+          className="static object-cover h-full w-full "
+        />
+        <div className="absolute top-24 left-28  mix-blend-darken backdrop-blur-md shadow-sm shadow-slate-500">
+          <h1 className="text-3xl text-center font-serif px-5 pt-5">
+            Do you want to seek InnoBytes's assistance in helping you resolve
+            some critical business issues?
+          </h1>
+          <div className="flex justify-center pt-10 pb-5">
+            <button className="text-lg text-black border-2 border-black p-1 transition duration-500 ease-in-out hover:bg-black hover:text-white">
+              Contact Us
+            </button>
+          </div>
         </div>
       </div>
     </>

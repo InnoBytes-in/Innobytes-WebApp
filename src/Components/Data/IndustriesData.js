@@ -199,7 +199,7 @@ export const industries = [
     id: 7,
     name: "High Tech",
     bg: "../assets/Tabs/Life Sciences bg.jpeg",
-    p1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
+    p1: "111111111111111Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eos quam. Nesciunt atque sed voluptas laborum, eum voluptates sequi beatae",
     p2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas! Numquam, tenetur provident vero cupiditate neque est incidunt rem illum sequi delectus dignissimos dolorum aut corporis facere. Molestias iusto explicabo tenetur laboriosam doloribus facere necessitatibus fuga vel voluptates, tempora at?",
     p3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error ipsam eos sed laboriosam assumenda iure nesciunt sit quasi. Quia.",
     whatwedo: [

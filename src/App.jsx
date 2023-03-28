@@ -12,7 +12,7 @@ function App() {
   // const [count, setCount] = useState(0);
   // console.log(window.location);
   return (
-    <>
+    <div className="bg-gray-100 max-h-max">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -39,7 +39,7 @@ function App() {
         ))}
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 

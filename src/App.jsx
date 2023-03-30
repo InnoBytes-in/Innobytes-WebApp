@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Tab from "./Components/Tab";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
 import { industries } from "./Components/Data/IndustriesData";
 import { insights } from "./Components/Data/InsightsData";
@@ -13,6 +14,7 @@ function App() {
   // console.log(window.location);
   return (
     <div className="bg-gray-100 max-h-max">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

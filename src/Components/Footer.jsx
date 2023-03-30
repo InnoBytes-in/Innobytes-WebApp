@@ -52,9 +52,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center items-center pt-3 bg-gray-100">
-          <a className="text-center text-black text-lg hover:underline cursor-pointer">
+          <h1
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="text-center text-black text-lg hover:underline cursor-pointer"
+          >
             Back To Top
-          </a>
+          </h1>
         </div>
         <div className="flex items-center py-4 bg-gray-100 px-10">
           <div className="flex-grow h-px bg-rose-500"></div>

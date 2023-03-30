@@ -39,9 +39,9 @@ const Home = () => {
   return (
     <>
       {/* Top Section */}
-      <div className="container h-screen">
+      <div className="container h-screen bg-cyan-700">
         <img
-          className="object-cover h-full w-full saturate-150"
+          className="object-cover h-full w-full saturate-150 opacity-60"
           src={background}
           alt=""
         />

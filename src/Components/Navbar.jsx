@@ -15,9 +15,9 @@ const Navbar = () => {
   });
 
   const scrollNavAnimation = useSpring({
-    backgroundColor: scroll ? "#F43F5E" : "white",
+    backgroundColor: scroll ? "#F43F5E" : "transparent",
     opacity: scroll ? 1 : 0.9,
-    color: scroll ? "white" : "black",
+    // color: scroll ? "white" : "black",
   });
 
   const changeBg = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
             <div>
               <ul className="flex items-center ml-6">
                 <li
-                  className="flex h-20 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-500 hover:text-white"
+                  className="flex h-20 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-700 hover:text-white"
                   onMouseEnter={() => setItems(() => "insights")}
                 >
                   Insights
@@ -59,7 +59,7 @@ const Navbar = () => {
                   onMouseEnter={() => setItems("")}
                 ></li>
                 <li
-                  className="flex h-20 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-500 hover:text-white"
+                  className="flex h-20 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-700 hover:text-white"
                   onMouseEnter={() => setItems(() => "industries")}
                 >
                   Industries
@@ -69,7 +69,7 @@ const Navbar = () => {
                   onMouseEnter={() => setItems("")}
                 ></li>
                 <li
-                  className="flex h-20  p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-500 hover:text-white"
+                  className="flex h-20  p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-700 hover:text-white"
                   onMouseEnter={() => setItems(() => "services")}
                 >
                   Services
@@ -79,13 +79,13 @@ const Navbar = () => {
                   onMouseEnter={() => setItems("")}
                 ></li>
                 <li
-                  className="flex h-20 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-500 hover:text-white"
+                  className="flex h-20 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-700 hover:text-white"
                   onMouseEnter={() => setItems(() => "careers")}
                 >
                   Careers
                 </li>
                 <li
-                  className="flex h-20 mx-8 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-500 hover:text-white"
+                  className="flex h-20 mx-8 p-2 cursor-pointer items-center transition duration-500 ease-in-out hover:bg-cyan-700 hover:text-white"
                   onMouseEnter={() => setItems(() => "aboutUs")}
                 >
                   About Us

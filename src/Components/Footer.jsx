@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="mt-28 h-80 font-serif" data-aos="fade-up">
+      <div className="mt-28 h-80 font-serif">
         <div className="flex items-center py-4 px-10">
           <div className="flex-grow h-px bg-rose-500"></div>
         </div>

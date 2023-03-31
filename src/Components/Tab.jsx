@@ -60,15 +60,24 @@ const Cloud = ({ tabCatagory, tab, index }) => {
               textStroke: "1px black",
             }}
             data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             {tab.name}
           </h1>
-          <div className="flex items-center py-4 px-5" data-aos="zoom-in">
+          <div
+            className="flex items-center py-4 px-5"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="500"
+          >
             <div className="flex-grow h-1 bg-rose-500"></div>
           </div>
           <div
             className="flex justify-end items-center py-5 px-5"
             data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             <div className="flex w-fit border-2 text-rose-500 border-white bg-white p-1 transition duration-500 ease-in-out hover:no-underline hover:bg-rose-500 hover:text-white hover:border-rose-500">
               <button
@@ -98,30 +107,43 @@ const Cloud = ({ tabCatagory, tab, index }) => {
           <h1 className="text-5xl text-justify font-bold font-serif">
             About Us
           </h1>
-          <div className="flex items-center w-20 py-4" data-aos="fade-up">
+          <div
+            className="flex items-center w-20 py-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
+          >
             <div className="flex-grow h-1 bg-rose-500"></div>
           </div>
           <p
             className="mt-5 text-2xl text-justify font-serif "
             data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             {tab.p1}
           </p>
           <p
             className="mt-5 text-2xl text-justify font-serif"
             data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             {tab.p2}
           </p>
           <p
             className="my-5 text-2xl text-justify font-serif"
             data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             {tab.p3}
           </p>
           <div
             className="flex items-center justify-end w-20 py-4"
             data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             <div className="flex-grow h-1 bg-rose-500"></div>
           </div>
@@ -129,7 +151,12 @@ const Cloud = ({ tabCatagory, tab, index }) => {
       </div>
 
       {/* Carousel Section */}
-      <div className="flex items-center pt-40 pb-4 px-20" data-aos="fade-up">
+      <div
+        className="flex items-center pt-40 pb-4 px-20"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >
         <div className="flex-grow h-px bg-rose-500"></div>
         <span className="flex-shrink text-3xl px-4 font-medium font-serif">
           Articles
@@ -146,6 +173,8 @@ const Cloud = ({ tabCatagory, tab, index }) => {
         <div
           className="grid grid-cols-2 h-96 items-center justify-center w-3/4 bg-white shadow-lg shadow-gray-500"
           data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
         >
           <div className="overflow-hidden h-full w-full">
             <img
@@ -177,7 +206,12 @@ const Cloud = ({ tabCatagory, tab, index }) => {
 
       {/* What We Do Section */}
       <div>
-        <div className="flex items-center mt-40 pb-16 px-20" data-aos="fade-up">
+        <div
+          className="flex items-center mt-40 pb-16 px-20"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+        >
           <div className="flex-grow h-px bg-rose-400"></div>
           <span className="flex-shrink text-3xl px-4 font-medium font-serif">
             What we do
@@ -191,12 +225,19 @@ const Cloud = ({ tabCatagory, tab, index }) => {
               key={index}
               className="flex items-center justify-center w-1/2 h-56 my-10 bg-white border-x-8 border-rose-500 drop-shadow-lg transition duration-500 ease-in-out hover:bg-cyan-700 hover:text-white"
               data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="500"
             >
               <h1 className="text-3xl text-center px-7 font-serif">{item}</h1>
             </div>
           ))}
         </div>
-        <div className="flex items-center pt-16 px-20" data-aos="fade-up">
+        <div
+          className="flex items-center pt-16 px-20"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+        >
           <div className="flex-grow h-px bg-rose-400"></div>
         </div>
       </div>
@@ -211,11 +252,15 @@ const Cloud = ({ tabCatagory, tab, index }) => {
           alt=""
           className="static object-cover h-full w-full "
           data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
         />
         <div className="absolute flex w-full h-full top-5 justify-between items-center">
           <div
             className="w-1/3 bg-cyan-700 ml-28 shadow-gray-500 shadow-xl"
             data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             <h1 className="text-4xl text-center font-serif font-semibold px-5 pt-5 text-white">
               Do you want to seek InnoBytes's assistance in helping you resolve
@@ -229,6 +274,8 @@ const Cloud = ({ tabCatagory, tab, index }) => {
             action=""
             className="w-1/3 max-h-max mr-28 px-10 mb-3 items-center bg-white shadow-gray-500 shadow-xl"
             data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
           >
             <h1 className="text-2xl font-serif py-5">Name</h1>
             <input

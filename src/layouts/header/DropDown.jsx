@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { industries } from "./Data/IndustriesData";
-import { insights } from "./Data/InsightsData";
-import { services } from "./Data/ServicesData";
-import { useSpring, animated } from "@react-spring/web";
+import { industries } from "../../data/IndustriesData";
+import { services } from "../../data/ServicesData";
+import { insights } from "../../data/InsightsData";
 
 const DropDown = ({ items }) => {
   let dropDownItems = [];

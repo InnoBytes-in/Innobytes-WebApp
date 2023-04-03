@@ -41,6 +41,7 @@ export const industries = [
       "Operational efficiency",
       "Regulatory compliance",
     ],
+    carousel: [1, 2],
   },
   {
     id: 3,

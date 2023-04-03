@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import DropDown from "./DropDown";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo_2.svg";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "@react-spring/web";
 
@@ -42,7 +42,7 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="Company Logo"
-                className="h-16 cursor-pointer"
+                className="h-24 cursor-pointer"
                 onMouseEnter={() => setItems("")}
               />
             </Link>

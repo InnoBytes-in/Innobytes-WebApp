@@ -4,7 +4,7 @@ const WhatWeDo = ({ tab }) => {
   return (
     <>
       <div
-        className="flex items-center mt-40 pb-16 px-20"
+        className="flex items-center mt-64 pb-16 px-20"
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="500"

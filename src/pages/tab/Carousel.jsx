@@ -2,10 +2,34 @@ import React from "react";
 import cr1 from "../../assets/Tabs/carousel1.jpg";
 import cr2 from "../../assets/Tabs/carousel2.jpg";
 import { GrNext, GrPrevious } from "react-icons/gr";
-import { useState } from "react";
+import { BsCircleFill, BsCircle } from "react-icons/bs";
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Carousel = ({ tab }) => {
   const [carouselIndex, setIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
+  const variants = {
+    initial: (direction) => {
+      return {
+        x: direction * 1000,
+        opacity: 0,
+      };
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        x: { type: "spring", stifness: "300", damping: "30" },
+      },
+    },
+    exit: (direction) => {
+      return {
+        x: direction * -1000,
+        opacity: 0,
+      };
+    },
+  };
 
   let carousel = [
     {
@@ -21,17 +45,19 @@ const Carousel = ({ tab }) => {
   ];
 
   let nextIndex = () => {
+    setDirection(1);
     setIndex((carouselIndex + 1) % carousel.length);
   };
 
   let prevIndex = () => {
+    setDirection(-1);
     let ind = carouselIndex === 0 ? carousel.length - 1 : carouselIndex - 1;
     setIndex(ind);
   };
 
   let cr = [cr1, cr2];
   return (
-    <>
+    <div>
       <div
         className="flex items-center pt-40 pb-4 px-20"
         data-aos="fade-up"
@@ -44,47 +70,75 @@ const Carousel = ({ tab }) => {
         </span>
         <div className="flex-grow h-px bg-rose-500"></div>
       </div>
-      <div className="flex items-center justify-center my-14">
-        <GrPrevious
-          size="2rem"
-          className="mr-10 cursor-pointer transition duration-500 ease-in-out hover:scale-125"
-          onClick={prevIndex}
-        />
-
-        <div
-          className="grid grid-cols-2 h-96 items-center justify-center w-3/4 bg-white shadow-lg shadow-gray-500"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="500"
-        >
-          <div className="overflow-hidden h-full w-full">
-            <img
-              src={cr[carouselIndex]}
-              className="relative object-cover h-full w-full transition duration-500 ease-in-out hover:scale-125"
-            />
-          </div>
-          <div className="relative text-2xl w-full h-full px-10 font-serif border-y-[1px] border-r-[1px] border-slate-500">
-            <h1 className="text-6xl mt-5">{carousel[carouselIndex].heading}</h1>
-            <div className="flex items-center justify-end w-20 py-4">
-              <div className="flex-grow h-1 bg-rose-500"></div>
+      <div
+        className="relative my-14 mt-16 w-full"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >
+        <AnimatePresence initial={false}>
+          <div className="relative w-full h-96 bg-white ">
+            <div className="overflow-hidden h-full w-full">
+              <motion.img
+                src={cr[carouselIndex]}
+                className="relative object-cover h-full w-full "
+                variants={variants}
+                animate="animate"
+                initial="initial"
+                exit="exit"
+                key={cr[carouselIndex]}
+                custom={direction}
+              />
             </div>
-            <p className="my-7 text-base text-justify h-24 overflow-hidden ">
-              {carousel[carouselIndex].p}
-            </p>
-            <div className="flex absolute justify-end py-5 bottom-5">
-              <button className="text-lg text-rose-500 border-2 border-transparent underline p-1 transition duration-500 ease-in-out hover:bg-rose-500 hover:text-white hover:no-underline">
-                Read more
-              </button>
-            </div>
+            <motion.div
+              className="absolute bg-white shadow-md text-2xl -bottom-24 left-5 w-1/2 h-96  px-10 font-serif"
+              variants={variants}
+              animate="animate"
+              initial="initial"
+              exit="exit"
+              key={cr[carouselIndex]}
+              custom={direction}
+            >
+              <h1 className="text-6xl mt-5">
+                {carousel[carouselIndex].heading}
+              </h1>
+              <div className="flex items-center justify-end w-20 py-4">
+                <div className="flex-grow h-1 bg-rose-500"></div>
+              </div>
+              <p className="my-7 text-base text-justify h-24 overflow-hidden ">
+                {carousel[carouselIndex].p}
+              </p>
+              <div className="flex absolute justify-end py-5 bottom-5">
+                <button className="text-lg text-rose-500 border-2 border-transparent underline p-1 transition duration-500 ease-in-out hover:bg-rose-500 hover:text-white hover:no-underline">
+                  Read more
+                </button>
+              </div>
+            </motion.div>
           </div>
+        </AnimatePresence>
+        <div className="absolute bg-white rounded-full p-3 w-fit flex right-1/3 bottom-6">
+          <GrPrevious
+            size="2rem"
+            className="cursor-pointer transition duration-500 ease-in-out hover:scale-125"
+            onClick={prevIndex}
+          />
+          <div className="flex items-center justify-center px-2 space-x-2">
+            {carousel.map((_, i) => {
+              return i === carouselIndex ? (
+                <BsCircleFill size="1rem" />
+              ) : (
+                <BsCircle size="1rem" />
+              );
+            })}
+          </div>
+          <GrNext
+            size="2rem"
+            className="cursor-pointer transition duration-500 ease-in-out hover:scale-125"
+            onClick={nextIndex}
+          />
         </div>
-        <GrNext
-          size="2rem"
-          className="ml-10 cursor-pointer transition duration-500 ease-in-out hover:scale-125"
-          onClick={nextIndex}
-        />
       </div>
-    </>
+    </div>
   );
 };
 

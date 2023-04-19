@@ -17,7 +17,7 @@ const Cloud = ({ tabCatagory, tab, index }) => {
       <ParagraphSection tab={tab} />
 
       {/* Carousel Section */}
-      <Carousel tab={tab} />
+      <Carousel tab={tab} tabCatagory={tabCatagory} />
 
       {/* What We Do Section */}
       <WhatWeDo tab={tab} />

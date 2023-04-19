@@ -1,4 +1,4 @@
-const industries = [
+export const industries = [
   {
     id: 0,
     name: "Automotive",
@@ -12,15 +12,15 @@ const industries = [
       "Operational improvement",
       "Technology implementation",
     ],
-    carousel: 
-    [
-      0,1,  
-    ],
+    carousel:
+      [
+        0, 1,
+      ],
   },
   {
     id: 1,
     name: "Communications And Media",
-    bg: "./Communications And Media_1.jpg",
+    bg: "./Communications and Media_1.jpg",
     p1: "We provide strategic communications and media consulting services to help our clients build brand awareness, engage audiences, and navigate industry disruptions.",
     p2: "Our team of experienced consultants has a deep understanding of the communications and media landscape and can develop customized solutions to meet your business goals.",
     p3: "We stay up-to-date on the latest trends and developments in the communications and media industry and share our insights through original research, whitepapers, and blog posts.",
@@ -31,10 +31,10 @@ const industries = [
       "Brand development",
       "Industry disruption analysis",
     ],
-    carousel: 
-    [
-      2,3,  
-    ],
+    carousel:
+      [
+        2, 3,
+      ],
   },
   {
     id: 2,
@@ -49,10 +49,10 @@ const industries = [
       "Operational efficiency",
       "Regulatory compliance",
     ],
-    carousel: 
-    [
-      4,5,  
-    ],
+    carousel:
+      [
+        4, 5,
+      ],
   },
   {
     id: 3,
@@ -60,22 +60,22 @@ const industries = [
     bg: "./Life Sciences_1.jpg",
     p1: "The field of life science is constantly evolving, with new discoveries and advancements being made all the time. As a result, it's important for companies and organizations to stay up-to-date on the latest developments in the field, and to have access to expert advice and guidance.",
     p2: "This is where life science consulting comes in. Life science consulting firms specialize in providing advice and support to companies and organizations in the life science industry. This can include everything from strategic planning and market analysis, to regulatory compliance and product development.",
-    p3: "Overall, life science consulting is an essential service for companies and organizations in the life science industry. With expert advice and guidance, companies can navigate the complex and rapidly evolving landscape of the industry, and stay ahead of the curve in terms of innovation, regulatory compliance, and market analysis.", 
+    p3: "Overall, life science consulting is an essential service for companies and organizations in the life science industry. With expert advice and guidance, companies can navigate the complex and rapidly evolving landscape of the industry, and stay ahead of the curve in terms of innovation, regulatory compliance, and market analysis.",
     whatwedo: [
       "Rapidly Changing Landscape",
       "Regulatory Compliance",
       "Product Development",
       "Market Analysis",
     ],
-    carousel: 
-    [
-      5,6,  
-    ],
+    carousel:
+      [
+        5, 6,
+      ],
   },
   {
     id: 4,
-    name: "Software and platforms",
-    bg: "./Software and platforms_1.jpg",
+    name: "Software and Platforms",
+    bg: "./Software and Platforms_1.jpg",
     p1: "Our consulting firm provides expert software and platform consulting services to help companies optimize their technology solutions and drive business growth.",
     p2: "Overview of the Software and Platforms Industry The software and platforms industry is a rapidly evolving landscape, with new technologies and platforms emerging at an unprecedented pace. Our team of software and platform experts stays up-to-date on the latest trends, challenges, and opportunities in the industry to provide our clients with cutting-edge solutions.",
     p3: "Our satisfied software and platform clients have provided us with testimonials that highlight our expertise, responsiveness, and ability to deliver results in the software and platforms industry. You can read their feedback on our Software and Platforms page. Contact us today to learn more about our software and platform consulting services and how we can help your company optimize its technology solutions.",
@@ -85,10 +85,10 @@ const industries = [
       "Data analysis",
       "Project management",
     ],
-    carousel: 
-    [
-      7,8,  
-    ],
+    carousel:
+      [
+        7, 8,
+      ],
   },
   {
     id: 5,
@@ -103,10 +103,10 @@ const industries = [
       "Digital transformation",
       "Operational excellence",
     ],
-    carousel: 
-    [
-      9,10,  
-    ],
+    carousel:
+      [
+        9, 10,
+      ],
   },
   {
     id: 6,
@@ -121,10 +121,10 @@ const industries = [
       "Supply chain management",
       "Sales and marketing",
     ],
-    carousel: 
-    [
-      11,12,  
-    ],
+    carousel:
+      [
+        11, 12,
+      ],
   },
   {
     id: 7,
@@ -139,10 +139,10 @@ const industries = [
       "Digital transformation",
       "Supply chain management",
     ],
-    carousel: 
-    [
-      13,14,  
-    ],
+    carousel:
+      [
+        13, 14,
+      ],
   },
   {
     id: 8,
@@ -157,10 +157,10 @@ const industries = [
       "Operational efficiency",
       "Supply chain management",
     ],
-    carousel: 
-    [
-      15,16,  
-    ],
+    carousel:
+      [
+        15, 16,
+      ],
   },
   {
     id: 9,
@@ -175,10 +175,10 @@ const industries = [
       "Operational efficiency",
       "Digital transformation",
     ],
-    carousel: 
-    [
-      17,18,  
-    ],
+    carousel:
+      [
+        17, 18,
+      ],
   },
   {
     id: 10,
@@ -193,10 +193,10 @@ const industries = [
       "Brand development",
       "Industry disruption analysis",
     ],
-    carousel: 
-    [
-      18,19,  
-    ],
+    carousel:
+      [
+        18, 19,
+      ],
   },
   {
     id: 11,
@@ -211,10 +211,10 @@ const industries = [
       "Digital transformation",
       "Supply chain management",
     ],
-    carousel: 
-    [
-      20,21,  
-    ],
+    carousel:
+      [
+        20, 21,
+      ],
   },
   {
     id: 12,
@@ -229,14 +229,14 @@ const industries = [
       "Supply chain management",
       "Quality management",
     ],
-    carousel: 
-    [
-      22,23,  
-    ],
+    carousel:
+      [
+        22, 23,
+      ],
   },
   {
     id: 13,
-    
+
     name: "Public Service",
     bg: "./Public Service_1.jpg",
     p1: "Our Public Service consulting practice provides strategic advice and innovative solutions to government agencies and non-profit organizations around the world. We have a team of experienced consultants who specialize in public policy, social welfare, education, and healthcare, and who help clients navigate complex challenges and deliver impactful results.",
@@ -248,10 +248,10 @@ const industries = [
       "Organizational effectiveness: ",
       "Performance management:",
     ],
-    carousel: 
-    [
-      24,25,  
-    ],
+    carousel:
+      [
+        24, 25,
+      ],
   },
   {
     id: 14,
@@ -266,10 +266,10 @@ const industries = [
       "Operational optimization",
       "Innovation and technology",
     ],
-    carousel: 
-    [
-      26,27,  
-    ],
+    carousel:
+      [
+        26, 27,
+      ],
   },
   {
     id: 15,
@@ -284,10 +284,10 @@ const industries = [
       "Operations improvement",
       "Mergers and acquisitions",
     ],
-    carousel: 
-    [
-      28,29,  
-    ],
+    carousel:
+      [
+        28, 29,
+      ],
   },
   {
     id: 16,
@@ -302,10 +302,10 @@ const industries = [
       "Network design",
       "Technology and innovation",
     ],
-    carousel: 
-    [
-      30,31,  
-    ],
+    carousel:
+      [
+        30, 31,
+      ],
   },
   {
     id: 17,
@@ -320,10 +320,10 @@ const industries = [
       "Customer experience",
       "Risk management",
     ],
-    carousel: 
-    [
-      32,33,  
-    ],
+    carousel:
+      [
+        32, 33,
+      ],
   },
   {
     id: 18,
@@ -338,9 +338,9 @@ const industries = [
       "Operational improvement",
       "Merchandising and pricing",
     ],
-    carousel: 
-    [
-      34,35,  
-    ],
+    carousel:
+      [
+        34, 35,
+      ],
   },
 ];
